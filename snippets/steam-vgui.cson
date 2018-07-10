@@ -1,0 +1,11 @@
+'.source.steam-vgui':
+  'Prefix Name':
+    'prefix': 'prefixSummon'
+    'body': 'thing=${1:this} ${2:other} ${3:thing} $4'
+	'Big Example':
+		'prefix': 'bigExample'
+		'body': """
+			bigprefixthing
+				it's multiline $1 it jumps between things
+			$2
+		"""

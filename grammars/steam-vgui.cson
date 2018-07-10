@@ -1,0 +1,45 @@
+'scopeName': 'source.steam-vgui'
+'name': 'Steam VGUI'
+
+'fileTypes': ['layout', 'styles', 'res']
+
+'patterns': [
+	{
+		'begin': '\\['
+		'end': '\\]'
+		'name': 'entity.name.function.steam-vgui'
+	}
+	{
+		'begin': '\"'
+		'end': '\"'
+		'name': 'string.quoted.double.steam-vgui'
+	}
+	{
+		'match': '(\/\/.*)'
+		'name': 'comment.line.double-slash.steam-vgui'
+	}
+	{
+		'match': '(\=|\:)'
+		'name': 'keyword.opperator.steam-vgui'
+	}
+	{
+		'match': '(?i)\\bcolors\\b'
+		'name': 'constant.other.steam-vgui'
+	}
+	{
+		'match': '(?i)\\b(styles|place|controls|layout)\\b'
+		'name': 'entity.name.section.steam-vgui'
+	}
+	{
+		'match': '(?i)\\b(render|render_bg|fill|gradient|image|image_tiled|image_scale|dashedrect|image_proportional)(-|_)*\\w*'
+		'name': 'entity.name.function.steam-vgui'
+	}
+	{
+		'match': '(?i)\\b(control|textcolor|font|family|selected|shadow|hover|disabled|width|height|align|margin|spacing|padding|image|font|inset|bgcolor|Hover|ControlName|labelText|style|name|textAlignment|zpos|URLText|fieldName|command|end|dir|start|maxchars|spacing|hintText|group|tabposition|URLtext|tooltiptext|visible|FrameFocus|region|framefocus|active|corner_rounding)(-|_)*\\w*'
+		'name': 'variable.language.steam-vgui'
+	}
+	{
+		'match': '(?i)\\b(x|y)\\b'
+		'name': 'constant.other.steam-vgui'
+	}
+]
